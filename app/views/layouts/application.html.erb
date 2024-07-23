@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsTutorial</title>
+    <title><%= full_title yield(:title) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,22 @@
   </head>
 
   <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <%= link_to "English", locale: :en %>
+    <%= link_to "Vietnamese", locale: :vi %>
+    <div class="container">
+      <%= link_to "sample app", root_path(locale: I18n.locale), id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t("header.nav.home"), static_pages_home_path(locale: I18n.locale) %></li>
+          <li><%= link_to t("header.nav.help"), static_pages_help_path(locale: I18n.locale) %></li>
+          <li><%= link_to t("header.nav.log_in"), "#" %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>
