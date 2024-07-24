@@ -6,3 +6,13 @@ links:
     url: "https://www.railstutorial.org"
     book: "https://www.railstutorial.org/book"
     help: "https://www.railstutorial.org/help"
+user:
+  name:
+    type: string
+    max_length: 50
+    min_length: 5
+  email:
+    type: string
+    regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
+    max_length: 255
+    min_length: 5
