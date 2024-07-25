@@ -23,3 +23,23 @@ en:
         rails_help: "Rails Tutorial help page"
         rails_book: "%{rails_book_em} book"
         rails_book_em: "Ruby on Rails Tutorial"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+    errors:
+      error: "error"
+      the_form_contains: "The form contains"
+  users:
+    message:
+      new: "User created successfully"
+      not_found: "User not found!"
+    new:
+      title: "Sign up"
+      form:
+        confirmation: "Confirmation"
+        submit_button: "Create my account"

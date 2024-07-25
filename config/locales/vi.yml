@@ -23,3 +23,23 @@ vi:
         rails_help: "trang trợ giúp Rails Tutorial"
         rails_book: "sách %{rails_book_em}"
         rails_book_em: "Ruby on Rails Tutorial"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
+    errors:
+      error: "Lỗi"
+      the_form_contains: "Form có"
+  users:
+    message:
+      new: "Tạo người dùng thành công"
+      not_found: "Không tìm thấy người dùng!"
+    new:
+      title: "Đăng ký"
+      form:
+        confirmation: "Xác nhận"
+        submit_button: "Tạo tài khoản"
