@@ -1,0 +1,30 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t(".logo"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t(".nav.home"), root_path %></li>
+        <li><%= link_to t(".nav.help"), help_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t(".nav.users"), "#" %></li>
+          <li class="dropdown" >
+            <%= link_to "#", id: "account", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+              <%=  t ".nav.account" %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><%= link_to t(".nav.profile"), current_user %></li>
+              <li><%= link_to t(".nav.settings"), "#" %></li>
+              <li class="divider"></li>
+              <li> <%= link_to t(".nav.log_out"), logout_path,  data: { "turbo-method": :delete } %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t(".nav.log_in"), login_path %></li>
+        <% end %>
+        <%= link_to "English", locale: :en %>
+        <%= link_to "Vietnamese", locale: :vi %>
+      </ul>
+    </nav>
+  </div>
+</header>
