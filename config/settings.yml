@@ -16,3 +16,10 @@ user:
     regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
     max_length: 255
     min_length: 5
+  password:
+    digits:
+      digit_6: 6
+  image:
+    profile: 90
+    list: 50
+page_10: 10

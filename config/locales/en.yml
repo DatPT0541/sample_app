@@ -12,6 +12,7 @@ en:
         profile: "Profile"
         settings: "Settings"
         users: "Users"
+        account: "Account"
   static_pages:
     home:
       title: "Home"
@@ -36,14 +37,28 @@ en:
         email: "Email"
         password: "Password"
   users:
+    user:
+      delete: "Delete"
+      you_sure: "You sure?"
     message:
       new: "User created successfully"
       not_found: "User not found!"
+      profile_updated: "Profile updated"
+      please_log_in: "Please log in."
+      cannot_edit: "You cannot edit this account."
+      user_deleted: "User deleted"
+      delete_fail: "Delete fail!"
+      not_authorized: "You are not authorized to perform this action."
     new:
       title: "Sign up"
-      form:
-        confirmation: "Confirmation"
-        submit_button: "Create my account"
+    edit:
+      title: "Update your profile"
+      change: "Change"
+    form:
+      submit_button: "Submit"
+      password_confirmation: "Confirmation"
+    index:
+      title: "All users"
   sessions:
     new:
       title: "Log in"
