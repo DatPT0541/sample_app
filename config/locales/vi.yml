@@ -12,6 +12,7 @@ vi:
         profile: "Hồ sơ"
         settings: "Cài đặt"
         users: "Người dùng"
+        account: "Tài khoản"
   static_pages:
     home:
       title: "Trang chủ"
@@ -36,14 +37,28 @@ vi:
         email: "Email"
         password: "Mật Khẩu"
   users:
+    user:
+      delete: "Xóa"
+      you_sure: "Bạn chắc chưa"
     message:
       new: "Tạo người dùng thành công"
       not_found: "Không tìm thấy người dùng!"
+      profile_updated: "Đã cập nhật hồ sơ"
+      please_log_in: "Hãy đăng nhập."
+      cannot_edit: "Bạn không thể chỉnh sửa tài này."
+      user_deleted: "Đã xóa người dùng"
+      delete_fail: "Không thể xóa!"
+      not_authorized: "Bạn không có quyền thực hiện hành động này."
     new:
       title: "Đăng ký"
-      form:
-        confirmation: "Xác nhận"
-        submit_button: "Tạo tài khoản"
+    edit:
+      title: "Chỉnh sửa thông tin"
+      change: "Thay đổi"
+    form:
+      submit_button: "Lưu"
+      password_confirmation: "Xác nhận"
+    index:
+      title: "Tất cả người dùng"
   sessions:
     new:
       title: "Đăng nhập"
