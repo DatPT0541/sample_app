@@ -49,6 +49,7 @@ vi:
       user_deleted: "Đã xóa người dùng"
       delete_fail: "Không thể xóa!"
       not_authorized: "Bạn không có quyền thực hiện hành động này."
+      check_mail: "Kiểm tra mail của bạn để kích hoạt tài khoản này."
     new:
       title: "Đăng ký"
     edit:
@@ -59,6 +60,11 @@ vi:
       password_confirmation: "Xác nhận"
     index:
       title: "Tất cả người dùng"
+  user_mailer:
+    message:
+      hi: "Chào "
+      welcome: "chào mừng đến với Sample App! Nhấp vào link sau đây để kích hoạt tài khoản:"
+      activate: "Kích hoạt"
   sessions:
     new:
       title: "Đăng nhập"
@@ -73,6 +79,7 @@ vi:
     create:
       message:
         invalid_email_password_combination: "Mật khẩu hoặc email không hợp lệ"
+        warning_account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra mail của bạn để lấy đường dẫn kích hoạt"
     attributes:
       user:
         email: "Email"
@@ -81,3 +88,8 @@ vi:
     error_messages:
       error: "Lỗi"
       the_form_contains: "Form có"
+  account_activations:
+    edit:
+      message:
+        account_activated: "Tài khoản đã được kích hoạt!"
+        invalid_activation_link: "Đường dẫn kích hoạt không hợp lệ"

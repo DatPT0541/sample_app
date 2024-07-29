@@ -33,11 +33,16 @@ class SessionsController < ApplicationController
   end
 
   def handle_authenticated_user user
-    forwarding_url = session[:forwarding_url]
-    reset_session
-    log_in user
-    params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-    redirect_to forwarding_url || user
+    if user.activated?
+      forwarding_url = session[:forwarding_url]
+      reset_session
+      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
+      log_in user
+      redirect_to forwarding_url || user
+    else
+      flash[:warning] = t ".message.warning_account_not_activated"
+      redirect_to root_url, status: :see_other
+    end
   end
 
   def handle_failed_authentication
