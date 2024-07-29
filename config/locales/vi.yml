@@ -65,6 +65,14 @@ vi:
       hi: "Chào "
       welcome: "chào mừng đến với Sample App! Nhấp vào link sau đây để kích hoạt tài khoản:"
       activate: "Kích hoạt"
+      subject_activation: "Kích hoạt tài khoản"
+      subject_reset: "Đặt lại mật khẩu"
+      password_reset: "Đặt lại mật khẩu"
+      reset_password: "Đặt lại mật khẩu"
+      password_reset_infor1: "Để đặt lại mật khẩu, nhấn vào link dưới đây:"
+      password_reset_infor2: "Link này có hiệu lực trong vòng 2 tiếng"
+      password_reset_infor3: "Nếu bạn không yêu cầu đặt lại mật khẩu,
+                              hãy bỏ qua email này và mật khẩu của bạn vẫn như cũ."
   sessions:
     new:
       title: "Đăng nhập"
@@ -76,6 +84,7 @@ vi:
         password: "Mật khẩu"
         submit_button: "Đăng nhập"
         remember_me: "Nhớ tài khoản"
+        forgot_password: "(quên mật khẩu)"
     create:
       message:
         invalid_email_password_combination: "Mật khẩu hoặc email không hợp lệ"
@@ -93,3 +102,26 @@ vi:
       message:
         account_activated: "Tài khoản đã được kích hoạt!"
         invalid_activation_link: "Đường dẫn kích hoạt không hợp lệ"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      form:
+        email: "Email"
+        submit_button: "Xác nhận"
+    create:
+      message:
+        info_email: "Đã gửi mail với hướng dẫn đặt lại mật khẩu"
+        danger_email_not_found: "Không tìm thấy Email"
+    edit:
+      title: "Đặt lại mật khẩu"
+      form:
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận"
+        submit_button: "Cập nhật mật khẩu"
+    update:
+      error: "Lỗi"
+      success: "Cập nhật thành công"
+    message:
+      danger_user_not_found: "Không tìm thấy người dùng!"
+      danger_user_is_in_activated: "Người dùng đang được kích hoạt!"
+      danger_password_reset: "Việc đặt lại mật khẩu đã hết hạn."

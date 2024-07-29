@@ -22,4 +22,5 @@ user:
   image:
     profile: 90
     list: 50
+  password_reset_expired: 2
 page_10: 10

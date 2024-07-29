@@ -65,6 +65,14 @@ en:
       hi: "Hi "
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+      subject_activation: "Account activation"
+      subject_reset: "Reset Password"
+      password_reset: "Password reset"
+      reset_password: "Reset password"
+      password_reset_infor1: "To reset your password click the link below:"
+      password_reset_infor2: "This link will expire in two hours."
+      password_reset_infor3: "If you did not request your password to be reset,
+                              please ignore this email and your password will stayas it is."
   sessions:
     new:
       title: "Log in"
@@ -76,6 +84,7 @@ en:
         password: "Password"
         submit_button: "Log in"
         remember_me: "Remeber me"
+        forgot_password: "(forgot password)"
     create:
       message:
         invalid_email_password_combination: "Invalid email password combination"
@@ -93,3 +102,26 @@ en:
       message:
         account_activated: "Account activated!"
         invalid_activation_link: "Invalid activation link"
+  password_resets:
+    new:
+      title: "Forgot password"
+      form:
+        email: "Email"
+        submit_button: "Submit"
+    create:
+      message:
+        info_email: "Email sent with password reset instructions"
+        danger_email_not_found: "Email address not found"
+    edit:
+      title: "Reset password"
+      form:
+        password: "Password"
+        password_confirmation: "Confirmation"
+        submit_button: "Update password"
+    update:
+      error: "Error"
+      success: "Reset password success"
+    message:
+      danger_user_not_found: "User not found!"
+      danger_user_is_in_activated: "User is in_actived!"
+      danger_password_reset: "Password reset has expired."
