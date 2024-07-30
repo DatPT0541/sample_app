@@ -21,6 +21,10 @@ vi:
         main: "Đây là trang chính cho sample app %{rails_url}."
         rails: "Ruby On Rails Tutorial"
         sign_up: "Đăng ký ngay!"
+        micropost_feed: "Các bài đăng"
+      user_infor:
+        view_my_profile: "xem hồ sơ của tôi"
+        micropost: "bài đăng"
     help:
       title: "Trợ giúp"
       content:
@@ -60,6 +64,8 @@ vi:
       password_confirmation: "Xác nhận"
     index:
       title: "Tất cả người dùng"
+    show:
+      microposts: "Các bài đăng"
   user_mailer:
     message:
       hi: "Chào "
@@ -89,6 +95,7 @@ vi:
       message:
         invalid_email_password_combination: "Mật khẩu hoặc email không hợp lệ"
         warning_account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra mail của bạn để lấy đường dẫn kích hoạt"
+        please_log_in: "Hãy đăng nhập"
     attributes:
       user:
         email: "Email"
@@ -125,3 +132,60 @@ vi:
       danger_user_not_found: "Không tìm thấy người dùng!"
       danger_user_is_in_activated: "Người dùng đang được kích hoạt!"
       danger_password_reset: "Việc đặt lại mật khẩu đã hết hạn."
+  datetime:
+    distance_in_words:
+      less_than_x_seconds:
+        one: "chưa đến 1 giây"
+        other: "chưa đến %{count} giây"
+      x_seconds:
+        one: "1 giây"
+        other: "%{count} giây"
+      half_a_minute: "nửa phút"
+      less_than_x_minutes:
+        one: "chưa đến một phút"
+        other: "chưa đến %{count} phút"
+      x_minutes:
+        one: "1 phút"
+        other: "%{count} phút"
+      about_x_hours:
+        one: "khoảng 1 giờ"
+        other: "khoảng %{count} giờ"
+      x_days:
+        one: "1 ngày"
+        other: "%{count} ngày"
+      about_x_months:
+        one: "khoảng 1 tháng"
+        other: "khoảng %{count} tháng"
+      x_months:
+        one: "1 tháng"
+        other: "%{count} tháng"
+      about_x_years:
+        one: "khoảng 1 năm"
+        other: "khoảng %{count} năm"
+      over_x_years:
+        one: "hơn 1 năm"
+        other: "hơn %{count} năm"
+      almost_x_years:
+        one: "Gần 1 năm"
+        other: "Gần %{count} năm"
+  micropost:
+    posted_ago: "Đăng %{time_ago} trước"
+    delete: "Xóa"
+    you_sure: "Bạn chắc chứ?"
+    form:
+      submit_button: "Đăng"
+      place_holder: "Soạn bài viết mới..."
+    message:
+      must_valid_image: "phải là ảnh hợp lệ"
+      less_than_5MB: "Phải nhỏ hơn 5MB"
+  microposts:
+    create:
+      success_created: "Đã tạo bài đăng!"
+    destroy:
+      micropost_deleted: "Đã xóa bài"
+      deleted_fail: "Lỗi xóa bài"
+    correct_user:
+      micropost_invalid: "Bài viết không hợp lệ"
+  js:
+    micropost:
+      max_size_error: "Kích thước tối đa của tập tin là 5MB. Vui lòng chọn tập tin nhỏ hơn."

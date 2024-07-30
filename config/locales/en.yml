@@ -21,6 +21,10 @@ en:
         main: "This is the home page for the %{rails_url} sample application."
         rails: "Ruby On Rails Tutorial"
         sign_up: "Sign up now!"
+        micropost_feed: "Micropost Feed"
+      user_infor:
+        view_my_profile: "view my profile"
+        micropost: "micropost"
     help:
       title: "Help"
       content:
@@ -60,6 +64,8 @@ en:
       password_confirmation: "Confirmation"
     index:
       title: "All users"
+    show:
+      microposts: "Microposts"
   user_mailer:
     message:
       hi: "Hi "
@@ -89,6 +95,7 @@ en:
       message:
         invalid_email_password_combination: "Invalid email password combination"
         warning_account_not_activated: "Account not activated. Check your email for the activation link."
+        please_log_in: "Please log in"
     attributes:
       user:
         email: "Email"
@@ -125,3 +132,60 @@ en:
       danger_user_not_found: "User not found!"
       danger_user_is_in_activated: "User is in_actived!"
       danger_password_reset: "Password reset has expired."
+  datetime:
+    distance_in_words:
+      less_than_x_seconds:
+        one: "less than 1 second"
+        other: "less than %{count} seconds"
+      x_seconds:
+        one: "1 second"
+        other: "%{count} seconds"
+      half_a_minute: "half a minute"
+      less_than_x_minutes:
+        one: "less than a minute"
+        other: "less than %{count} minutes"
+      x_minutes:
+        one: "1 minute"
+        other: "%{count} minutes"
+      about_x_hours:
+        one: "about 1 hour"
+        other: "about %{count} hours"
+      x_days:
+        one: "1 day"
+        other: "%{count} days"
+      about_x_months:
+        one: "about 1 month"
+        other: "about %{count} months"
+      x_months:
+        one: "1 month"
+        other: "%{count} months"
+      about_x_years:
+        one: "about 1 year"
+        other: "about %{count} years"
+      over_x_years:
+        one: "over 1 year"
+        other: "over %{count} years"
+      almost_x_years:
+        one: "almost 1 year"
+        other: "almost %{count} years"
+  micropost:
+    posted_ago: "Posted %{time_ago} ago"
+    delete: "Delete"
+    you_sure: "You sure?"
+    form:
+      submit_button: "Post"
+      place_holder: "Compose new micropost..."
+    message:
+      must_valid_image: "must be a valid image format"
+      less_than_5MB: "should be less than 5MB"
+  microposts:
+    create:
+      success_created: "Micropost created!"
+    destroy:
+      micropost_deleted: "Micropost deleted"
+      deleted_fail: "Deleted fail"
+    correct_user:
+      micropost_invalid: "Micropost invalid"
+  js:
+    micropost:
+      max_size_error: "Maximum file size is 5MB. Please choose a smaller file."
