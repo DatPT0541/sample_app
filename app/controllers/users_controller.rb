@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy User.all, items: Settings.page_10
+    @pagy, @users = pagy User.all, limit: Settings.page_10
   end
 
   def show
-    @pagy, @microposts = pagy @user.microposts, items: Settings.page_10
+    @pagy, @microposts = pagy @user.microposts, limit: Settings.page_10
   end
 
   def new
@@ -45,6 +45,18 @@ class UsersController < ApplicationController
       flash[:danger] = t ".message.delete_fail"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t ".message.following"
+    @pagy, @users = pagy @user.following, limit: Settings.page_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".message.followers"
+    @pagy, @users = pagy @user.followers, limit: Settings.page_10
+    render :show_follow
   end
 
   private

@@ -54,6 +54,8 @@ vi:
       delete_fail: "Không thể xóa!"
       not_authorized: "Bạn không có quyền thực hiện hành động này."
       check_mail: "Kiểm tra mail của bạn để kích hoạt tài khoản này."
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
     new:
       title: "Đăng ký"
     edit:
@@ -66,6 +68,13 @@ vi:
       title: "Tất cả người dùng"
     show:
       microposts: "Các bài đăng"
+    show_follow:
+      microposts: "Các bài đăng"
+      view_my_profile: "xem hồ sơ của tôi"
+    follow:
+      follow_button: "Theo dõi"
+    unfollow:
+      unfollow_button: "Hủy theo dõi"
   user_mailer:
     message:
       hi: "Chào "
@@ -104,6 +113,9 @@ vi:
     error_messages:
       error: "Lỗi"
       the_form_contains: "Form có"
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
   account_activations:
     edit:
       message:
@@ -186,6 +198,9 @@ vi:
       deleted_fail: "Lỗi xóa bài"
     correct_user:
       micropost_invalid: "Bài viết không hợp lệ"
+  relationships:
+    user_not_found: "Không tìm thấy người dùng"
+    relationship_not_found: "Không tìm thấy quan hệ"
   js:
     micropost:
       max_size_error: "Kích thước tối đa của tập tin là 5MB. Vui lòng chọn tập tin nhỏ hơn."

@@ -54,6 +54,8 @@ en:
       delete_fail: "Delete fail!"
       not_authorized: "You are not authorized to perform this action."
       check_mail: "Please check your email to activate your account."
+      following: "Following"
+      followers: "Followers"
     new:
       title: "Sign up"
     edit:
@@ -66,6 +68,13 @@ en:
       title: "All users"
     show:
       microposts: "Microposts"
+    show_follow:
+      microposts: "Microposts"
+      view_my_profile: "view my profile"
+    follow:
+      follow_button: "Follow"
+    unfollow:
+      unfollow_button: "Unfollow"
   user_mailer:
     message:
       hi: "Hi "
@@ -104,6 +113,9 @@ en:
     error_messages:
       error: "error"
       the_form_contains: "The form contains"
+    stats:
+      following: "following"
+      followers: "followers"
   account_activations:
     edit:
       message:
@@ -186,6 +198,9 @@ en:
       deleted_fail: "Deleted fail"
     correct_user:
       micropost_invalid: "Micropost invalid"
+  relationships:
+    user_not_found: "User Not Found"
+    relationship_not_found: "Relationships Not Found"
   js:
     micropost:
       max_size_error: "Maximum file size is 5MB. Please choose a smaller file."
