@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
     @micropost = current_user.microposts.build
     @pagy, @feed_items = pagy(
       current_user.feed.recent_posts,
-      items: Settings.page_10
+      limit: Settings.page_10
     )
   end
 

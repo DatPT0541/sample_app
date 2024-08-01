@@ -30,3 +30,4 @@ digit_140: 140
 digit_500_500: [500, 500]
 micropost:
   image_megabytes: 5
+size_img_30: 30
